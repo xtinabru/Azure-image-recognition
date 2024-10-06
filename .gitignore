@@ -1,0 +1,14 @@
+# Ignore the environment file with sensitive data
+.env
+
+# Python bytecode
+*.pyc
+__pycache__/
+
+# Virtual environment folder
+venv/
+env/
+
+# Cache and log files
+*.log
+*.cache
