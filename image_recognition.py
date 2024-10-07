@@ -14,7 +14,7 @@ params = {
     "visualFeatures": "Categories,Description",
 }
 
-image_path = "C:/Users/Cristofer/Pictures/night.jpeg"
+image_path = "C:/Users/Cristofer/Pictures/man.jpeg"
 with open(image_path, "rb") as image:
     response = requests.post(
         analyze_url,
@@ -35,7 +35,7 @@ for key in analysis:
     print(f"- {key}")
 
 if "description" in analysis:
-    print("What we can see in the picture:")
+    print("This is what we see in the picture:")
     for caption in analysis["description"]["captions"]:
         print(f"- {caption['text']} (confidence: {caption['confidence']:.2f})")
 else:
